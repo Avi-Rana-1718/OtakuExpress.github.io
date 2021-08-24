@@ -1,0 +1,107 @@
+<html>
+    <head>
+  <title>Otaku Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7047EB">
+  <script async src="https://arc.io/widget.min.js#76u5UhV2"></script>
+  <meta name="description" content="Read your favourite manga's only on MangaSoap. Ad-Free and Premium experience!">
+  <!--BOOTSTRAP-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/3a3c813962.js" crossorigin="anonymous"></script>      
+        <!--BODYFONT-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!--Heading-->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+  <!--SEC-->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <!--POPPINS-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+background-color: #fff;
+ font-family: 'Montserrat', sans-serif;
+padding:0px;
+}
+
+.page {
+    height: 100vh;
+    background-color: #ffffff;
+    display:none;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
+}
+#start {
+    display: block;
+}
+#etxt {
+    float: left;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+.dd {
+    clip-path: polygon(30% 6%, 100% 29%, 100% 100%, 0 100%, 0 3%);
+    background-color: blue;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    display: block;
+}
+.next {
+    background-color:pink;
+    padding:10px;
+    border-radius: 4px;
+    border:none;
+    color: white;
+    position: absolute;
+    display: block;
+    bottom: 10;
+    right: 20;
+    z-index: 2;
+    float: right;
+}
+h3 {
+    text-decoration: bold;
+}
+
+</style>
+<body>
+    <div id="start" class="page">
+        <h1>Otaku Digest</h1>
+        <span id="etxt"><i class="fas fa-calendar"></i> July 2021 Edition</span>
+<br><br>
+<div class="dd">
+<small><i class="fas fa-scroll"></i> <b>News Stall</b></small><br>
+
+<ul>
+    <li>Crunchyroll Now Joining Funimation!</li>
+    <li>Attack on Titan The Final Season Part 2 to Premiere January 2022.</li>
+</ul>
+</div>
+    </div>
+    <div class="page">
+        <h3><b>Crowdfunded Anine KURAYUKABA gets a Green Light for the Entire Film's Production</b></h3>
+    </div>
+    <div class="page">
+        <h3><b>Attack on Titan The Final Season announced. The season's Part 2 will premiere with episode 76 in January 2022</b></h3>
+    </div>
+        <button class="next" onclick="my()"><i class="fas fa-arrow-circle-right"></i></h1></button>
+    <script>
+    var n = 0;
+    function my() {
+        n = n + 1;
+        y = n - 1;
+        
+  var x = document.querySelectorAll(".page");
+  x[y].style.display = "none";
+  x[n].style.display = "block";
+}
+</script>
+    </body>
+</html>
