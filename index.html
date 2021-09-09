@@ -20,6 +20,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <style>
+* {
+    transition: all 0.3s;
+}
     body {
 background-color: #fff;
  font-family: 'Montserrat', sans-serif;
@@ -66,10 +69,18 @@ h1 {
     z-index: 2;
     float: right;
 }
-h3 {
-    text-decoration: bold;
+.bottom {
+    position: absolute;
+    bottom:0;
 }
-
+.bar {
+    width: 100%;
+    background-color: red;
+    display: block;
+    padding: 20px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
 </style>
 <body>
     <div id="start" class="page">
@@ -86,15 +97,17 @@ h3 {
 </div>
     </div>
     <div class="page">
+        <div class="bar top"></div>
         <h3><b>Crowdfunded Anine KURAYUKABA gets a Green Light for the Entire Film's Production</b></h3>
     </div>
     <div class="page">
         <h3><b>Attack on Titan The Final Season announced. The season's Part 2 will premiere with episode 76 in January 2022</b></h3>
+        <div class="bar bottom"></div>
     </div>
-        <button class="next" onclick="my()"><i class="fas fa-arrow-circle-right"></i></h1></button>
+        <button class="next" onclick="next()"><i class="fas fa-arrow-circle-right"></i></h1></button>
     <script>
     var n = 0;
-    function my() {
+    function next() {
         n = n + 1;
         y = n - 1;
         
